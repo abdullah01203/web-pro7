@@ -1,0 +1,201 @@
+:root{
+    --primarycolor: red ;
+    --secondarycolor: rgb(212, 150, 150) ;
+    --lighting-color: #ffffff;
+    --bgcolor-1: rgb(21, 2, 2) ;
+    --bgcolor-2: rgb(41, 35, 35) ;
+    --padding:8%;
+
+}
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+html{font-family: 'Kanit', sans-serif; font-size: 16px;color: var(--lighting-color);}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgcolor-1);
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    
+}
+h1{
+    font-size: 3.65rem;
+    mqrgin:1.7rem 0;
+}
+h2{
+    font-size: 2.2rem;letter-spacing: 0.12; cursor: pointer;
+}
+h3{
+    font-size: 1.5rem;
+    margin-bottom:3rem ;
+}
+h4{
+    font-size: 1.25rem;
+    color: var(--secondarycolor);
+}
+h5{
+    font-size: 1.37rem;
+}
+p{
+    color: var(--secondarycolor);
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+
+span {color: var(--primarycolor);}
+
+nav{padding-top:3.2rem; padding-left:var(--padding); padding-right:var(--padding);display: flex;justify-content: space-between; align-items: center;}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+nav ul li a{
+    color: var(--lighting-color); text-decoration: none; text-transform: capitalize;
+    transition:0.4s;
+}
+nav ul li a:hover{
+    color:var(--primarycolor)
+}
+.btn{
+    background-color: var(--primarycolor);
+    color:var(--lighting-color);
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid var(--bgcolor-1);
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    transition:0.4s;
+}
+.btn:hover{
+    background-color: rgba(0,0,0,0); 
+    border: 2px solid var(--primarycolor);
+}
+.content{
+    
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-text{
+    position: relative;
+    bottom: 70px;  
+}
+.social{
+    margin-top: 3.5rem;
+}
+.social img{
+    margin-right:2rem ;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+.social img:hover{
+    transform: scale(1.2);
+}
+
+.home .content-img{
+    
+    width: 45%;
+    height: 90%;
+    position: relative;
+    align-self: flex-end;
+    
+}
+.home .content-img img{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+.content-img:hover .shape{
+    bottom: 40px;
+}
+.content-img:hover .pic{
+    left: 45%;
+}
+.about{
+    background-color: var(--bgcolor-2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.about .content-img{
+    width: 45%;
+   
+    
+}
+.about .content-img img{
+     width:90%;
+     transition: 1s;
+}
+.about:hover .pic{
+    margin-left: -5%;
+}
+
+.about .content-text{
+    bottom: 50%;
+    width: 35%;
+    transition: 5s;
+}
+.about .content-text .text{
+
+width: 400px;
+    transition: 1.2s;
+}
+.about:hover .text{
+   
+    margin-left:-10% ;
+}
+.services{
+    background: var(--bgcolor-1);
+    padding:  2rem var(--padding);
+}
+.text-center{
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card{background-color: var(--bgcolor-2);
+width: 250px;
+border-radius: 20px;
+padding: 1.3rem 2rem;
+text-align: center;
+transition: 0.5s;
+
+}
+.card i{
+    font-size: 3.12rem;
+    text-align: center;
+    color: var(--primarycolor);
+    margin: 2rem;
+}
+.card:hover {
+ scale: 1.02;
+}
+.skill{
+    background-color: var(--bgcolor-2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skill .content-img{
+    width: 45%;
+}
+.skill .content-img img{
+     width:90%;
+}
